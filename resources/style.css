@@ -1,0 +1,209 @@
+body, html {
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: white;
+    opacity: 0.9;
+    text-align: center;
+    color:black;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.small-menu {
+    display:none;
+}
+
+
+nav {
+    text-align: right;
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-family: Helvetica;
+    padding: 1rem 0px;
+}
+
+
+header {
+    margin-top: 1rem;
+    height: 30rem;
+    background: url("./images/glasses-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.glasses {
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;  
+}
+
+.content {
+    padding: 0rem 1rem;
+}
+
+
+.banner {
+    background-color: white;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-top: 10rem;
+    padding: 1.5rem 5rem;
+    color: black;
+    margin-right: -2rem;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/*main body*/
+
+.service-box {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 3rem;
+    width: 5rem;
+    height: 8rem;
+}
+.service img {
+    margin-bottom: 1rem;
+    width: 5rem;
+}
+
+/*Supporting*/
+
+.supporting {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    background-color: cadetblue;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    font-family: Helvetica;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+    max-width: 10rem;
+}
+
+.info {
+    width: 35%;
+    margin-right: 5%;
+    margin-bottom: 4rem;
+}
+
+.info p {
+    padding: 1rem 0px;
+}
+
+/*Footer*/
+
+footer {
+    background-color: azure;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    
+}
+footer img {
+    height: 1.5rem;
+    padding: 4rem 2rem;
+    
+}
+
+@media only screen and (max-width: 1024px){
+    .container {
+        width: 100%;
+    }
+    nav .container {
+        width: 100%;
+    }
+    header {
+        height: 22rem;
+        background-position: 20%
+    }
+    .banner {
+        font-size: 1.33rem;
+        padding: 0.75rem 4rem;
+        margin-right: 2rem;
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+  .menu span {
+    display: none;
+  }
+
+  .small-menu {
+    display: block;
+      padding-right: 1rem;
+  }
+}
+
+@media only screen and (max-width: 560px){
+    nav .logo-text {
+        display: none;
+    }
+    
+    header {
+        background-position: 20%;
+    }
+    .banner {
+        width: 100%;
+        padding: 1rem;
+        font-size:1rem;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .service-box, .supporting {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 3rem;
+    }
+    .service {
+        font-size: 0.77rem;
+        height: auto;
+        font-family: Helvetica;
+    }
+    .info {
+        width: 100%;
+    }
+    .info .title {
+        width: 100%;
+        max-width:none;
+        margin-right:0;
+        text-align: center;
+    }
+    footer span {
+        display: none;
+    }
+    footer {
+        justify-content: center;
+    }
+}
